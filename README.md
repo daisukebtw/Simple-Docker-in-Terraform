@@ -28,11 +28,11 @@ The Docker container in this example runs an image called `daisukebtw/docker-ter
 1. Clone the repository `git clone https://github.com/daisukebtw/Simple-Docker-in-Terraform`
 2. Create an `aws-credentials.tf` file in the root directory of the project with your AWS Access Key and Secret Access Key:
 
-      provider "aws" {
-        access_key = "<your_access_key>"
-        secret_key = "<your_secret_access_key>"
-        region     = "eu-central-1"
-      }
+            provider "aws" {
+                  access_key = "<your_access_key>"
+                  secret_key = "<your_secret_access_key>"
+                  region     = "eu-central-1"
+            }
 3. Run terraform init to initialize the working directory
 4. Run terraform apply to create the AWS resources and deploy the Docker container
 5. When you're done, run terraform destroy to delete the resources and terminate the EC2 instance
