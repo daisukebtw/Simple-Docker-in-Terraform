@@ -1,3 +1,15 @@
+#----------------------------------------------------------
+# Provisioning an AWS Instance with a Docker Container
+#
+# Create: 
+#    - Security Group for Web Server
+#    - Using user_data installing and Setting up Docker on Web Server
+#    - Pulling Docker Image from Docker Hub
+#    - Launching Docker container
+#
+# Made by Vitali Aleksandrov 5-May-2023
+#-----------------------------------------------------------
+
 provider "aws" {
   region = "eu-central-1"
 }
